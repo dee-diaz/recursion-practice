@@ -1,6 +1,5 @@
 function mergeSort(arr) {
-  if (arr.length === 0) return [];
-  if (arr.length === 1) return arr;
+  if (arr.length <= 1) return arr;
 
   const mid = Math.floor(arr.length / 2);
   const left = mergeSort(arr.slice(0, mid));
@@ -33,3 +32,5 @@ function mergeSort(arr) {
 
   return merged;
 }
+
+console.log(mergeSort([3, 1, 8, 100, 0]));
