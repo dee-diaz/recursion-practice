@@ -26,5 +26,3 @@ function fibsRec(num) {
 
   return [...prevArray, lastNum + secondLastNum];
 }
-
-console.log(fibsRec(8));
